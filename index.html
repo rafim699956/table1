@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table1</title>
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+    h1 {
+        text-align: left;
+        padding: 0px 20px;
+    }
+
+    p {
+        text-align: left;
+        padding: 20px;
+        font-size: 14px;
+        color: gray;
+    }
+
+    table {
+        max-width: 950px;
+        margin: 0 auto;
+        overflow: auto;
+    }
+
+    th:first-child {
+        display: block;
+    }
+
+    td {
+        padding: 10px 15px;
+    }
+
+    td:last-child {
+        margin-right: 0;
+    }
+
+    tr:first-child td {
+        min-width: 150px;
+        border-radius: 30px;
+        border: 1px solid #8A9AA7;
+        color: #8A9AA7;
+        font-weight: 700;
+    }
+
+    tr:first-child td:first-child {
+        border: none;
+        padding-right: 10px;
+    }
+
+    tr {
+        position: relative;
+    }
+
+    tr:nth-child(2)::after,
+    tr:nth-child(5)::after,
+    tr:nth-child(8)::after,
+    tr:nth-child(11)::after {
+        position: absolute;
+        content: '';
+        left: 0;
+        top: 0;
+        width: 950px;
+        height: 100%;
+        border-radius: 30px;
+    }
+
+    tr:nth-child(2)::after {
+        border: 2px solid #6F92FF;
+    }
+
+    tr:nth-child(5)::after {
+        border: 2px solid #28A2E1;
+    }
+
+    tr:nth-child(8)::after {
+        border: 2px solid #16B6CC;
+    }
+
+    tr:nth-child(11)::after {
+        background: #ECF0F3;
+        border: 2px solid #ECF0F3;
+        z-index: -1;
+    }
+
+    tr:nth-child(3)::after,
+    tr:nth-child(6)::after,
+    tr:nth-child(9)::after {
+        position: absolute;
+        content: '';
+        width: 100%;
+        left: 0;
+        bottom: -5px;
+        border-bottom: 2px dotted gray;
+    }
+
+    tr:last-child td {
+        padding: 0;
+        border-bottom: 2px solid #86949F;
+        border-radius: 20px;
+    }
+
+    tr:last-child td:first-child {
+        padding: 0;
+        border-bottom: none;
+    }
+
+    tr:nth-child(2) td {
+        color: #6F92FF;
+        font-weight: 700;
+        text-align: right;
+    }
+
+    tr:nth-child(5) td {
+        color: #28A2E1;
+        font-weight: 700;
+        text-align: right;
+    }
+
+    tr:nth-child(8) td {
+        color: #16B6CC;
+        font-weight: 700;
+        text-align: right;
+    }
+
+    tr:nth-child(11) td {
+        color: black;
+        font-weight: 700;
+        text-align: right;
+    }
+
+    tr:nth-child(3) td,
+    tr:nth-child(4) td,
+    tr:nth-child(6) td,
+    tr:nth-child(7) td,
+    tr:nth-child(9) td,
+    tr:nth-child(10) td {
+        text-align: right;
+        color: gray;
+    }
+
+    tr:nth-child(2) td:first-child,
+    tr:nth-child(5) td:first-child,
+    tr:nth-child(8) td:first-child {
+        text-align: left;
+    }
+</style>
+
+<body>
+    <table cellspacing="10">
+        <caption>
+            <h1>Table Layout Template</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim debitis aspernatur cumque similique eos
+                quos
+                aliquid mollitia? Cumque, eos numquam consequatur ea optio fuga! Aspernatur dicta vero quis blanditiis
+                dolore!
+            </p>
+        </caption>
+        <tr>
+            <td>&nbsp;</td>
+            <td>Donec Aliquam</td>
+            <td>Aenean et nisi</td>
+            <td>Pellentesque</td>
+            <td>Vivamus vitae</td>
+            <td>Consectetur</td>
+        </tr>
+        <tr>
+            <td>Pellentesque</td>
+            <td>$120,146</td>
+            <td>0,007</td>
+            <td>5,24</td>
+            <td>$99,225</td>
+            <td>24,59%</td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td>$60,073</td>
+            <td>0,003</td>
+            <td>1,09</td>
+            <td>$22,345</td>
+            <td>14,25%</td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td>$60,073</td>
+            <td>0,004</td>
+            <td>4,15</td>
+            <td>$76,880</td>
+            <td>10,34%</td>
+        </tr>
+        <tr>
+            <td>Nunc vestibulum</td>
+            <td>$85,493</td>
+            <td>0,006</td>
+            <td>3,57</td>
+            <td>$120,146</td>
+            <td>35,07%</td>
+        </tr>
+        <tr>
+            <td>&nbsp</td>
+            <td>$32,143</td>
+            <td>0,002</td>
+            <td>2,45</td>
+            <td>$60,073</td>
+            <td>18,54%</td>
+        </tr>
+        <tr>
+            <td>&nbsp</td>
+            <td>$53,350</td>
+            <td>0,004</td>
+            <td>1,12</td>
+            <td>$60,073</td>
+            <td>16,53%</td>
+        </tr>
+        <tr>
+            <td>Mauris risus</td>
+            <td>$99,225</td>
+            <td>0,009</td>
+            <td>5,31</td>
+            <td>$85,493</td>
+            <td>40,34%</td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td>$76,880</td>
+            <td>0,004</td>
+            <td>4,22</td>
+            <td>$32,143</td>
+            <td>22,22%</td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td>$22,345</td>
+            <td>0,005</td>
+            <td>1,09</td>
+            <td>$53,350</td>
+            <td>18,12%</td>
+        </tr>
+        <tr>
+            <td>Donec accumsan:</td>
+            <td>$304,864</td>
+            <td>0,022</td>
+            <td>14,12</td>
+            <td>$304,864</td>
+            <td>100%</td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+    </table>
+</body>
+
+</html>
